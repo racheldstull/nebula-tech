@@ -1,0 +1,66 @@
+#compLanding {
+  height: 100%;
+  background-color: $black;
+  display: flex;
+  margin-top: -100px;
+
+  .image {
+    width: 40%;
+    padding-top: 140px;
+    z-index: 8;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .productName {
+    color: $yellow;
+    font-family: "segoe ui", sans-serif;
+    margin: 40vh auto 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 0 auto;
+      color: $white;
+      font-size: 3.5vw;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 7vw;
+      margin: 0 auto;
+      font-family: "rollergirlsregular", sans-serif;
+      padding-bottom: 30px;
+
+      span {
+        font-family: "high_tide_-_demoregular", sans-serif;
+      }
+    }
+
+    a {
+      margin: 0 auto;
+
+      button {
+        margin: 0 auto;
+        padding: 7px 25px;
+        font-size: 20px;
+        background: none;
+        border: solid 2px $white;
+        border-radius: 25px;
+        color: $white;
+        width: 200px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

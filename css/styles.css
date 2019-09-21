@@ -1,0 +1,1157 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px; }
+
+img {
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+video {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  position: absolute;
+  top: -130px;
+  z-index: 0; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+nav {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  nav #topHeader {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 50px;
+    width: 100%;
+    z-index: 110; }
+    nav #topHeader .left {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      nav #topHeader .left a {
+        margin: 0 auto;
+        text-decoration: none;
+        line-height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        nav #topHeader .left a .icon {
+          width: 20px; }
+        nav #topHeader .left a .name {
+          margin-left: -15px;
+          width: 140px; }
+    nav #topHeader .center {
+      padding: 0 100px;
+      width: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      nav #topHeader .center .dropItem {
+        margin: 0 auto;
+        padding: 0 1vw; }
+        nav #topHeader .center .dropItem:hover {
+          text-decoration: underline;
+          background: none; }
+      nav #topHeader .center ul {
+        margin: 0 auto;
+        padding: 0 10px;
+        list-style-type: none;
+        position: relative; }
+        nav #topHeader .center ul li {
+          display: inline-block; }
+          nav #topHeader .center ul li:hover {
+            background-color: #333333; }
+            nav #topHeader .center ul li:hover ul {
+              display: block; }
+          nav #topHeader .center ul li i {
+            color: #ffffff;
+            float: right;
+            padding-left: 20px; }
+        nav #topHeader .center ul ul {
+          position: absolute;
+          min-width: 200px;
+          background: #242423;
+          display: none; }
+          nav #topHeader .center ul ul li {
+            display: block;
+            background: #242423; }
+      nav #topHeader .center a {
+        margin: 0 auto;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "segoe ui", sans-serif;
+        line-height: 50px;
+        font-weight: 600; }
+      nav #topHeader .center .bars {
+        background: #242423;
+        color: #ffffff;
+        font-size: 24px;
+        padding: 0.6em;
+        cursor: pointer;
+        display: none; }
+    nav #topHeader .right {
+      width: 25%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 80px; }
+      nav #topHeader .right .searchBar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto; }
+        nav #topHeader .right .searchBar form {
+          margin: 0 auto;
+          line-height: 48px; }
+          nav #topHeader .right .searchBar form input[type=text] {
+            background: none;
+            border: none;
+            border-bottom: solid 3px #ffffff;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "segoe ui", sans-serif;
+            font-weight: 500px; }
+            nav #topHeader .right .searchBar form input[type=text]:focus {
+              outline: none; }
+          nav #topHeader .right .searchBar form a {
+            color: #ffffff;
+            text-decoration: none; }
+      nav #topHeader .right a {
+        margin: 0 auto;
+        color: #ffffff;
+        line-height: 50px; }
+  nav #productTopHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #393938;
+    height: 50px;
+    width: 100%;
+    z-index: 110; }
+    nav #productTopHeader .left {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      nav #productTopHeader .left a {
+        margin: 0 auto;
+        text-decoration: none;
+        line-height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        nav #productTopHeader .left a .icon {
+          width: 20px; }
+        nav #productTopHeader .left a .name {
+          margin-left: -15px;
+          width: 140px; }
+    nav #productTopHeader .center {
+      padding: 0 100px;
+      width: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      nav #productTopHeader .center .dropItem {
+        margin: 0 auto;
+        padding: 0 1vw; }
+        nav #productTopHeader .center .dropItem:hover {
+          text-decoration: underline;
+          background: none; }
+      nav #productTopHeader .center ul {
+        margin: 0 auto;
+        padding: 0 10px;
+        list-style-type: none;
+        position: relative; }
+        nav #productTopHeader .center ul li {
+          display: inline-block; }
+          nav #productTopHeader .center ul li:hover {
+            background-color: #333333; }
+            nav #productTopHeader .center ul li:hover ul {
+              display: block; }
+          nav #productTopHeader .center ul li i {
+            color: #ffffff;
+            float: right;
+            padding-left: 20px; }
+        nav #productTopHeader .center ul ul {
+          position: absolute;
+          min-width: 200px;
+          background: #242423;
+          display: none; }
+          nav #productTopHeader .center ul ul li {
+            display: block;
+            background: #242423; }
+      nav #productTopHeader .center a {
+        margin: 0 auto;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "segoe ui", sans-serif;
+        line-height: 50px;
+        font-weight: 600; }
+      nav #productTopHeader .center .bars {
+        background: #242423;
+        color: #ffffff;
+        font-size: 24px;
+        padding: 0.6em;
+        cursor: pointer;
+        display: none; }
+    nav #productTopHeader .right {
+      width: 25%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 80px; }
+      nav #productTopHeader .right .searchBar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto; }
+        nav #productTopHeader .right .searchBar form {
+          margin: 0 auto;
+          line-height: 48px; }
+          nav #productTopHeader .right .searchBar form input[type=text] {
+            background: none;
+            border: none;
+            border-bottom: solid 3px #ffffff;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "segoe ui", sans-serif;
+            font-weight: 500px; }
+            nav #productTopHeader .right .searchBar form input[type=text]:focus {
+              outline: none; }
+          nav #productTopHeader .right .searchBar form a {
+            color: #ffffff;
+            text-decoration: none; }
+      nav #productTopHeader .right a {
+        margin: 0 auto;
+        color: #ffffff;
+        line-height: 50px; }
+  nav #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #222222;
+    height: 100px;
+    width: 100%;
+    z-index: 109;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    nav #header .product {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      background-color: #222222; }
+      nav #header .product .name {
+        width: 75%; }
+        nav #header .product .name h1 {
+          position: absolute;
+          margin: 18px 0 0 40px;
+          font-family: "rollergirlsregular", sans-serif;
+          color: #F5CB5C;
+          font-weight: normal; }
+        nav #header .product .name span {
+          font-family: "high_tide_-_demoregular", sans-serif;
+          color: #F5CB5C;
+          font-weight: normal; }
+      nav #header .product .buy {
+        width: 25%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        nav #header .product .buy p {
+          font-family: "segoe ui", sans-serif;
+          color: #ffffff;
+          font-weight: bold;
+          font-style: italic;
+          line-height: 60px;
+          right: 280px;
+          position: absolute; }
+        nav #header .product .buy button {
+          right: 90px;
+          position: absolute;
+          margin-top: 13px;
+          padding: 5px 13px;
+          font-size: 18px;
+          background: none;
+          border: solid 2px #ffffff;
+          border-radius: 25px;
+          color: #ffffff;
+          width: 160px;
+          -webkit-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
+          nav #header .product .buy button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            cursor: pointer; }
+    nav #header .secNav {
+      height: 40px;
+      width: 100%;
+      margin-top: 60px;
+      background-color: #161616; }
+      nav #header .secNav ul {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        nav #header .secNav ul li {
+          line-height: 40px;
+          margin-left: 40px;
+          margin-right: 20px; }
+          nav #header .secNav ul li a {
+            font-family: "segoe ui", sans-serif;
+            color: #ffffff;
+            text-decoration: none; }
+
+@media (max-width: 1410px) {
+  .center .dropItem {
+    padding: 0 1vw; } }
+
+@media (max-width: 768px) {
+  nav .center {
+    display: block; }
+  ul {
+    display: none;
+    position: static;
+    background: #e3e3e3; }
+    ul li {
+      display: block; }
+    ul ul {
+      position: static;
+      background: #e3e3e3; } }
+
+#landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  #landing .tagline {
+    text-align: left;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-left: 62vw;
+    margin-top: 23vh;
+    z-index: 100; }
+    #landing .tagline .line {
+      background-color: #ffffff;
+      width: 100px;
+      height: 10px; }
+  #landing video {
+    margin: 0 auto;
+    z-index: 0; }
+
+#aquarii {
+  height: 100%;
+  background-image: url("../images/sec-aquarii-w.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  #aquarii svg {
+    fill: #F7ECD1;
+    z-index: 60; }
+  #aquarii .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 60vw;
+    padding-top: 25vh;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #aquarii .content .introducing {
+      position: absolute;
+      margin: 5px 0 0 10px;
+      font-size: 20px;
+      color: #000000;
+      font-style: italic;
+      font-family: "segoe ui", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      z-index: 70; }
+    #aquarii .content h1 {
+      font-family: "dosis", sans-serif;
+      font-size: 6vw;
+      color: #F5CB5C;
+      font-weight: normal; }
+    #aquarii .content .line {
+      width: 100px;
+      height: 10px;
+      background-color: #F5CB5C;
+      margin-bottom: 16px; }
+    #aquarii .content p {
+      font-size: 20px;
+      padding: 10px 0; }
+    #aquarii .content button {
+      padding: 7px 25px;
+      font-size: 20px;
+      background: none;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      color: #ffffff;
+      width: 200px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #aquarii .content button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+
+#supernova {
+  height: 100%;
+  background-image: url("../images/sec-supernova-w.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  #supernova .content {
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10vw;
+    padding-top: 20vh;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #supernova .content .introducing {
+      position: absolute;
+      margin: 5px 0 0 10px;
+      font-size: 20px;
+      color: #000000;
+      font-style: italic;
+      font-family: "segoe ui", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      z-index: 70; }
+    #supernova .content h1 {
+      font-family: "rollergirlsregular", sans-serif;
+      font-size: 6vw;
+      color: #F5CB5C;
+      font-weight: normal;
+      text-align: right; }
+    #supernova .content span {
+      font-family: "high_tide_-_demoregular", sans-serif;
+      font-size: 6vw;
+      color: #F5CB5C;
+      font-weight: normal; }
+    #supernova .content .line {
+      margin: -25px 0 16px 76%;
+      width: 100px;
+      height: 10px;
+      background-color: #F5CB5C; }
+    #supernova .content p {
+      font-size: 20px;
+      padding: 10px 0;
+      text-align: right; }
+    #supernova .content button {
+      margin-left: 55%;
+      padding: 7px 25px;
+      font-size: 20px;
+      background: none;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      color: #ffffff;
+      width: 200px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #supernova .content button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+
+#cosmonaut {
+  height: 100%;
+  background-image: url("../images/sec-cosmonaut-w.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  #cosmonaut .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 60vw;
+    padding-top: 25vh;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #cosmonaut .content .introducing {
+      position: absolute;
+      margin: 5px 0 0 10px;
+      font-size: 20px;
+      color: #000000;
+      font-style: italic;
+      font-family: "segoe ui", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      z-index: 70; }
+    #cosmonaut .content h1 {
+      margin-left: -12px;
+      font-family: "aileronsregular", sans-serif;
+      font-size: 6vw;
+      color: #F5CB5C;
+      font-weight: normal; }
+    #cosmonaut .content .line {
+      width: 100px;
+      height: 10px;
+      background-color: #F5CB5C;
+      margin-bottom: 16px; }
+    #cosmonaut .content p {
+      font-size: 20px;
+      padding: 10px 0; }
+    #cosmonaut .content button {
+      padding: 7px 25px;
+      font-size: 20px;
+      background: none;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      color: #ffffff;
+      width: 200px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #cosmonaut .content button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+
+#gearshop {
+  height: 100%;
+  background-image: url("../images/sec-gearshop-w2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
+  #gearshop .content {
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10vw;
+    padding-top: 22vh;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #gearshop .content .introducing {
+      position: absolute;
+      margin: 5px 0 0 10px;
+      font-size: 20px;
+      color: #000000;
+      font-style: italic;
+      font-family: "segoe ui", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      z-index: 70; }
+    #gearshop .content h1 {
+      font-family: "manksaregular", sans-serif;
+      font-size: 8vw;
+      color: #F5CB5C;
+      font-weight: normal;
+      text-align: right; }
+    #gearshop .content .line {
+      margin: -25px 0 16px 76%;
+      width: 100px;
+      height: 10px;
+      background-color: #F5CB5C; }
+    #gearshop .content p {
+      font-size: 20px;
+      padding: 10px 0;
+      text-align: right; }
+    #gearshop .content button {
+      margin-left: 55%;
+      padding: 7px 25px;
+      font-size: 20px;
+      background: none;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      color: #ffffff;
+      width: 200px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #gearshop .content button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+
+#compLanding {
+  height: 100%;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -100px; }
+  #compLanding .image {
+    width: 40%;
+    padding-top: 140px;
+    z-index: 8; }
+    #compLanding .image img {
+      width: 100%; }
+  #compLanding .productName {
+    color: #F5CB5C;
+    font-family: "segoe ui", sans-serif;
+    margin: 40vh auto 0 auto;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #compLanding .productName p {
+      margin: 0 auto;
+      color: #ffffff;
+      font-size: 3.5vw;
+      font-weight: bold; }
+    #compLanding .productName h1 {
+      font-size: 7vw;
+      margin: 0 auto;
+      font-family: "rollergirlsregular", sans-serif;
+      padding-bottom: 30px; }
+      #compLanding .productName h1 span {
+        font-family: "high_tide_-_demoregular", sans-serif; }
+    #compLanding .productName a {
+      margin: 0 auto; }
+      #compLanding .productName a button {
+        margin: 0 auto;
+        padding: 7px 25px;
+        font-size: 20px;
+        background: none;
+        border: solid 2px #ffffff;
+        border-radius: 25px;
+        color: #ffffff;
+        width: 200px;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        #compLanding .productName a button:hover {
+          background-color: #ffffff;
+          color: #000000;
+          font-weight: bold;
+          cursor: pointer; }
+
+#compDetails {
+  height: 100%;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "segoe ui", sans-serif; }
+  #compDetails .title {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 60px; }
+    #compDetails .title h1 {
+      text-align: center;
+      font-size: 3vw;
+      margin-top: 50px; }
+  #compDetails .text {
+    width: 50%;
+    margin: 0 auto; }
+    #compDetails .text p {
+      text-align: center;
+      font-size: 1.3vw; }
+  #compDetails .details {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px; }
+    #compDetails .details .column {
+      width: 33%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #compDetails .details .column .item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 50px; }
+        #compDetails .details .column .item .image {
+          width: 100px; }
+          #compDetails .details .column .item .image img {
+            width: 100%; }
+        #compDetails .details .column .item .desc {
+          padding: 0 40px; }
+          #compDetails .details .column .item .desc h1 {
+            font-size: 2vw; }
+          #compDetails .details .column .item .desc p {
+            font-size: 1.5vw; }
+          #compDetails .details .column .item .desc .lineTwo {
+            margin-top: -12px; }
+
+#compPerformance {
+  height: 90%;
+  background-image: url("../images/sec-performance.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #compPerformance .text {
+    padding-left: 80px;
+    padding-top: 23vh;
+    width: 40%;
+    text-align: right;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #compPerformance .text h1 {
+      font-size: 4vw; }
+    #compPerformance .text p {
+      font-size: 1.5vw; }
+
+#compDisplay {
+  height: 90%;
+  background-image: url("../images/sec-display.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #compDisplay .text {
+    position: absolute;
+    right: 0;
+    padding-right: 100px;
+    padding-top: 23vh;
+    width: 44%;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #compDisplay .text h1 {
+      font-size: 4vw; }
+    #compDisplay .text p {
+      font-size: 1.5vw; }
+
+#compDesign {
+  height: 90%;
+  background-image: url("../images/sec-nolimits.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #compDesign .text {
+    padding-left: 80px;
+    padding-top: 23vh;
+    width: 40%;
+    text-align: right;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #compDesign .text h1 {
+      font-size: 4vw; }
+    #compDesign .text p {
+      font-size: 1.5vw; }
+
+#compVR {
+  height: 90%;
+  background-image: url("../images/sec-vr.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #compVR .text {
+    position: absolute;
+    right: 0;
+    padding-right: 120px;
+    padding-top: 30vh;
+    width: 45%;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #compVR .text h1 {
+      font-size: 4vw; }
+    #compVR .text p {
+      font-size: 1.5vw; }
+
+#phoneLanding {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  margin-top: -100px; }
+  #phoneLanding .image {
+    width: 30%;
+    padding-top: 140px;
+    z-index: 8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #phoneLanding .image img {
+      width: 100%;
+      margin: 0 auto; }
+  #phoneLanding .productName {
+    color: #F5CB5C;
+    font-family: "segoe ui", sans-serif;
+    margin: 40vh auto 0 auto;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #phoneLanding .productName p {
+      margin: 0 auto;
+      color: #ffffff;
+      font-size: 3.5vw;
+      font-weight: bold; }
+    #phoneLanding .productName h1 {
+      font-size: 7vw;
+      margin: 0 auto;
+      font-family: "dosis", sans-serif;
+      padding-bottom: 30px;
+      font-weight: unset; }
+    #phoneLanding .productName button {
+      margin: 0 auto;
+      padding: 7px 25px;
+      font-size: 20px;
+      background: none;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      color: #ffffff;
+      width: 200px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #phoneLanding .productName button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+
+#phonePerformance {
+  height: 90%;
+  background-image: url("../images/sec-phonePerf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #phonePerformance .text {
+    padding-left: 80px;
+    padding-top: 23vh;
+    width: 40%;
+    text-align: right;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #phonePerformance .text h1 {
+      font-size: 4vw; }
+    #phonePerformance .text p {
+      font-size: 1.5vw; }
+
+#phoneBattery {
+  height: 90%;
+  background-image: url("../images/sec-battery.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #phoneBattery .text {
+    position: absolute;
+    right: 0;
+    padding-right: 100px;
+    padding-top: 23vh;
+    width: 44%;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #phoneBattery .text h1 {
+      font-size: 4vw; }
+    #phoneBattery .text p {
+      font-size: 1.5vw; }
+
+#phoneCamera {
+  height: 90%;
+  background-image: url("../images/sec-camera.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #phoneCamera .text {
+    padding-left: 80px;
+    padding-top: 23vh;
+    width: 40%;
+    text-align: right;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #phoneCamera .text h1 {
+      font-size: 4vw; }
+    #phoneCamera .text p {
+      font-size: 1.5vw; }
+
+#phoneStorage {
+  height: 90%;
+  background-image: url("../images/sec-storage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #phoneStorage .text {
+    position: absolute;
+    right: 0;
+    padding-right: 120px;
+    padding-top: 25vh;
+    width: 45%;
+    color: #ffffff;
+    font-family: "segoe ui", sans-serif; }
+    #phoneStorage .text h1 {
+      font-size: 4vw; }
+    #phoneStorage .text p {
+      font-size: 1.5vw; }
+
+#order {
+  height: 100%;
+  background-color: black;
+  color: #ffffff; }
+  #order .title {
+    width: 100%; }
+    #order .title h1 {
+      text-align: center;
+      font-family: "segoe ui", sans-serif;
+      color: #F5CB5C;
+      font-size: 60px;
+      padding-top: 20px; }
+  #order .content {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    #order .content .left {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #order .content .left .image {
+        width: 80%;
+        margin: 0 auto; }
+        #order .content .left .image img {
+          width: 100%; }
+      #order .content .left h1 {
+        text-align: center;
+        font-family: "segoe ui", sans-serif;
+        color: #F5CB5C; }
+    #order .content .right {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      #order .content .right .column {
+        margin-top: 10vh;
+        width: 50%; }
+        #order .content .right .column .item {
+          margin-bottom: 30px; }
+          #order .content .right .column .item #panel, #order .content .right .column .item #flip {
+            padding: 8px;
+            text-align: left;
+            background-color: #ffffff;
+            border: solid 1px #c3c3c3;
+            color: #161616;
+            width: 300px;
+            font-family: "segoe ui", sans-serif;
+            font-weight: bold; }
+          #order .content .right .column .item #panel {
+            padding: 50px;
+            display: none; }
+            #order .content .right .column .item #panel ul {
+              list-style-type: none; }
+              #order .content .right .column .item #panel ul li {
+                margin-bottom: 16px; }
+                #order .content .right .column .item #panel ul li:hover {
+                  background-color: #bababa;
+                  cursor: pointer; }
+  #order .price {
+    text-align: right;
+    margin-right: 200px;
+    font-family: "segoe ui", sans-serif;
+    font-style: italic; }
+    #order .price button {
+      margin-left: 55%;
+      padding: 7px 25px;
+      font-size: 20px;
+      background: none;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      color: #ffffff;
+      width: 200px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #order .price button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  footer .content {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto; }
+    footer .content .column {
+      width: 10%;
+      margin: 0 auto; }
+      footer .content .column .secondaryNav {
+        width: 20%; }
+      footer .content .column ul {
+        color: #ffffff;
+        font-family: "segoe ui", sans-serif;
+        list-style: none;
+        font-size: 12px; }
+        footer .content .column ul .title {
+          font-weight: bold; }
+        footer .content .column ul a {
+          text-decoration: none;
+          color: #ffffff; }
+      footer .content .column .searchBar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto; }
+        footer .content .column .searchBar form {
+          margin: 0 auto;
+          line-height: 48px; }
+          footer .content .column .searchBar form input[type=text] {
+            background: none;
+            border: none;
+            border-bottom: solid 3px #ffffff;
+            color: #ffffff;
+            font-size: 12px;
+            font-family: "segoe ui", sans-serif;
+            font-weight: 500;
+            width: 80px; }
+            footer .content .column .searchBar form input[type=text]:focus {
+              outline: none; }
+          footer .content .column .searchBar form a {
+            color: #ffffff;
+            text-decoration: none; }
+  footer .copyright {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    border-top: 1px solid #cccccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .copyright p {
+      padding-top: 10px;
+      font-size: 12px;
+      color: #cccccc;
+      font-family: "segoe ui", sans-serif; }
+    footer .copyright .rowOne {
+      width: 85%; }
+    footer .copyright .rowTwo {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      footer .copyright .rowTwo .circle {
+        margin-top: 13px;
+        width: 10px;
+        height: 10px;
+        background-color: #cccccc;
+        border-radius: 25px; }
+
+#four-o-four {
+  color: #2e2e2e;
+  font-family: "segoe ui", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 30vh; }
+  #four-o-four h1 {
+    font-size: 5vw;
+    margin: 0 auto; }
+  #four-o-four p {
+    font-size: 2vw;
+    margin: 0 auto; }

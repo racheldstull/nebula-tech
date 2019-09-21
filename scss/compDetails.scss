@@ -1,0 +1,74 @@
+#compDetails {
+  height: 100%;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  font-family: "segoe ui", sans-serif;
+
+  .title {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    h1 {
+      text-align: center;
+      font-size: 3vw;
+      margin-top: 50px;
+    }
+  }
+
+  .text {
+    width: 50%;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+      font-size: 1.3vw;
+    }
+  }
+
+  .details {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 50px;
+
+    .column {
+      width: 33%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+        .item {
+          display: flex;
+          padding-bottom: 50px;
+
+          .image {
+            width: 100px;
+
+            img {
+              width: 100%
+            }
+          }
+
+          .desc {
+            padding: 0 40px;
+
+            h1 {
+              font-size: 2vw;
+            }
+
+            p {
+              font-size: 1.5vw;
+            }
+
+            .lineTwo {
+             margin-top: -12px;
+            }
+          }
+        }
+    }
+  }
+
+}

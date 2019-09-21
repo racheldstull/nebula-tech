@@ -1,0 +1,24 @@
+#phoneCamera {
+  height: 90%;
+  background-image: url("../images/sec-camera.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .text {
+    padding-left: 80px;
+    padding-top: 23vh;
+    width: 40%;
+    text-align: right;
+    color: $white;
+    font-family: "segoe ui", sans-serif;
+
+    h1 {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+    }
+  }
+}

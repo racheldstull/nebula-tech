@@ -1,0 +1,25 @@
+#phoneStorage {
+  height: 90%;
+  background-image: url("../images/sec-storage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .text {
+    position: absolute;
+    right: 0;
+    padding-right: 120px;
+    padding-top: 25vh;
+    width: 45%;
+    color: $white;
+    font-family: "segoe ui", sans-serif;
+
+    h1 {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+    }
+  }
+}
